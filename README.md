@@ -11,5 +11,5 @@ set_cmodel
 
 ## Test
 ```bash
-python demo.py
+python demo_layernorm.py
 ```
