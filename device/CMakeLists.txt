@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.5)
+project(deviceop LANGUAGES C CXX)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/install)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0 -Wl,--no-undefined")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -Wl,--no-undefined")
+
+
+include($ENV{TPUKERNEL_DEV_MODE}.cmake)
